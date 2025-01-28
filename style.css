@@ -171,3 +171,35 @@ h1 {
 .products-title {
   padding-top: 25px;
 }
+
+.cta-bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+#social-icon {
+  max-width: 3em;
+  height: auto;
+  margin-top: 25px;
+}
+
+.footer {
+  color: white;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 3, 46);
+  margin-top: 25px;
+  padding: 10px 0px 0px 10px;
+  line-height: 0.25;
+}
+
+.footer a {
+  color: aqua;
+}

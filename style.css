@@ -4,12 +4,16 @@ body {
   color: #ec5bad;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  font-size: 24px;
+
+  font-size: 16px;
 }
 
 div {
   // border: 1px solid red;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 .nav-bar-container {
@@ -21,20 +25,46 @@ div {
 
 .nav-logo {
   margin-right: auto;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
   color: #fbde58;
   text-shadow: -2px -2px 0 #fe69bd, 2px -2px 0 #fe69bd, -2px 2px 0 #fe69bd,
     2px 2px 0 #fe69bd;
 }
 
-.nav-list {
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 9%;
+  right: 0;
+  width: 60%;
+  background-color: #68e6ef;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  z-index: 1000;
+  border-radius: 10px;
+  border: 1px solid grey;
+  font-weight: 500;
+}
+
+.nav-links.active {
   display: flex;
-  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-list {
   text-decoration: none;
+  color: #da519f;
   margin: 0;
-  padding: 0;
-  gap: 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 15px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-list a {
@@ -46,6 +76,21 @@ div {
   text-decoration: underline;
 }
 
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #da519f;
+  transition: 0.3s;
+}
+
 .main-banner {
   display: flex;
   justify-content: center;
@@ -54,7 +99,8 @@ div {
 }
 
 .main-banner img {
-  max-width: 400px;
+  max-width: 70%;
+  height: auto;
 }
 
 .info-banner {
@@ -69,7 +115,7 @@ div {
 
 #hero-text {
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 700;
   color: #fbde58;
   text-shadow: -2px -2px 0 #fe69bd, 2px -2px 0 #fe69bd, -2px 2px 0 #fe69bd,
@@ -81,7 +127,6 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 10%;
 }
 
 .products {
@@ -94,31 +139,35 @@ div {
 }
 
 .card img {
-  width: 250px;
+  max-width: 75%;
+  height: auto;
   border: 3px solid #da519f;
   border-radius: 10px;
 }
 
 .card {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5px;
 }
 
 #ruffles {
-  max-height: 210px;
-  width: auto;
+  max-width: 70%;
+  height: auto;
 }
 
 .product-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .products-title {
-  padding: 80px;
+  padding-top: 25px;
 }

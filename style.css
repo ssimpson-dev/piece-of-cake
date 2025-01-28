@@ -38,13 +38,13 @@ h1 {
   top: 9%;
   right: 0;
   width: 60%;
-  background-color: #68e6ef;
+  background-color: powderblue;
   box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.4);
   margin-right: 10px;
   z-index: 1000;
   border-radius: 10px;
   border: 1px solid grey;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-links.active {
@@ -106,7 +106,7 @@ h1 {
 .info-banner {
   padding: 25px 10%;
 
-  background-color: #68e6ef;
+  background-color: powderblue;
 
   display: flex;
   justify-content: center;
@@ -127,6 +127,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .products {
@@ -180,8 +181,8 @@ h1 {
   font-size: 26px;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 40px;
   padding: 20px;
+  background-color: powderblue;
 }
 #social-icon {
   max-width: 3em;
@@ -195,7 +196,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: rgb(34, 3, 46);
-  margin-top: 25px;
+
   padding: 10px 0px 0px 10px;
   line-height: 0.25;
 }

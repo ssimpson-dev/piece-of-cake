@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
@@ -25,11 +26,7 @@
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="products-prices.html">Products and Prices</a></li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=61569069385836"
-              >Order Now</a
-            >
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -37,113 +34,135 @@
       <img src="images/piece-of-cake-logo.jpg" alt="piece of cake logo" />
     </div>
 
-    <div class="pricing-container">
-      <div class="price-table">
-        <h1 class="hero-text">Product Pricing</h1>
-        <div class="table">
-          <table>
-            <tr>
-              <th>Product</th>
-              <th>Individual Portion</th>
-              <th>Traybake</th>
-            </tr>
-            <tr>
-              <td>Caramel Shortcake</td>
-              <td>£3</td>
-              <td>£15</td>
-            </tr>
-            <tr>
-              <td>Brownies</td>
-              <td>£3</td>
-              <td>£15</td>
-            </tr>
-            <tr>
-              <td>Cheesecake</td>
-              <td>£4</td>
-              <td>£15</td>
-            </tr>
-            <tr>
-              <td>Mars Bar Cake</td>
-              <td>£3</td>
-              <td>£15</td>
-            </tr>
-            <tr>
-              <td>Old School Cake</td>
-              <td>£3</td>
-              <td>£15</td>
-            </tr>
-            <tr>
-              <td>Ruffles</td>
-              <td>£3</td>
-              <td>£15</td>
-            </tr>
-          </table>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Piece of Cake Menu</title>
+    
+</head>
+<body>
+    <div class="menu-container">
+      
+      <div class="menu-header"><h2>A Piece of Cake Menu</h2></div>
+        <div class="menu-section">
+            <h2 class="menu-title">TRAYBAKES</h2>
+            <div class="menu-item">
+                <span>MARS BAR</span><span>£15.00</span>
+                <span>SMALL FULL CHEESECAKE</span><span>£17.00</span>
+            </div>
+            <div class="menu-item">
+                <span>OLD SCHOOL CARAMEL CAKE</span><span>£15.00</span>
+                <span>LARGE FULL CHEESECAKE</span><span>£20.00</span>
+            </div>
+            <div class="menu-item">
+                <span>OLD SCHOOL SPONGE CAKE</span><span>£15.00</span>
+            </div>
         </div>
-      </div>
 
-      <div class="price-table">
-        <h1 class="hero-text">Cupcake Pricing</h1>
-        <div class="table">
-          <table>
-            <tr>
-              <th>Cupcake Box Size</th>
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>Box of 6</td>
-              <td>£12</td>
-            </tr>
-            <tr>
-              <td>Box of 12</td>
-              <td>£20</td>
-            </tr>
-            <tr>
-              <td>Box of 18</td>
-              <td>£26</td>
-            </tr>
-          </table>
+        <div class="menu-section">
+            <h2 class="menu-title">INDIVIDUALS</h2>
+            <div class="menu-item">
+                <span>CARAMEL SHORTCAKE</span><span>£3.00</span>
+                <span>RASPBERRY RUFFLES</span><span>£2.50</span>
+            </div>
+            <div class="menu-item">
+                <span>MARS BAR CAKE</span><span>£3.00</span>
+                <span>OREO TRUFFLES</span><span>£1.50</span>
+            </div>
+            <div class="menu-item">
+                <span>CHEESECAKE (ANY FLAVOUR)</span><span>£4.00</span>
+                <span>BISCOFF TRUFFLES</span><span>£1.50</span>
+            </div>
+            <div class="menu-item">
+                <span>STICKY TOFFEE PUDDING POT</span><span>£4.50</span>
+                <span>BROWNIES (ANY FLAVOUR)</span><span>£2.50</span>
+            </div>
         </div>
+
+        <div class="menu-section">
+            <h2 class="menu-title">CUPCAKES</h2>
+            <div class="menu-item">
+                <span>BOX OF 6 CUPCAKES</span><span>£12.00</span>
+                <span>BOX OF 12 CUPCAKES</span><span>£18.00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-container">
+      <p>Ready to place an order? Click the button below to send us a message with your order details, and we’ll confirm it with you shortly!</p>
+      <button class="enquiry-btn">Order</button>
+    </div>
+
+    <div id="enquiryModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Send an Enquiry</h2>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xanqbykz"
+          method="POST"
+        >
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="Name" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="Email Address" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="Message" required></textarea>
+
+          <button type="submit" class="submit">Send Message</button>
+        </form>
+        <p id="success-message" style="display: none; color: green">
+          Thank you! Your enquiry has been sent.
+        </p>
       </div>
     </div>
-    <div class="testimonial-container">
-      <div class="testimonial">
-        "Will definitely be ordering again, thanks."<br />- Jacqueline Mcnulty
-      </div>
 
-      <div class="testimonial">
-        "Got caramel cake and both ruffles from Danielle and both absolutely
-        amazing. Highly recommend."<br />- Jennifer Hughes
-      </div>
-      <div class="testimonial">
-        "We got Mars bar cake and ruffles. They were both amazing. Definitely
-        getting another order soon."" <br />- Garry Odonnel
-      </div>
-    </div>
+<div class="testimonial-container">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial">
+      <p>"Will definitely be ordering again, thanks."</p>
+      <span>- Jacqueline McNulty</span>
+  </div>
+
+  <div class="testimonial">
+      <p>"Got caramel cake and both ruffles from Danielle and both absolutely amazing. Highly recommend."</p>
+      <span>- Jennifer Hughes</span>
+  </div>
+
+  <div class="testimonial">
+      <p>"We got Mars bar cake and ruffles. They were both amazing. Definitely getting another order soon."</p>
+      <span>- Garry Odonnel</span>
+  </div>
+</div>
+
     <div class="cta-banner">
       <div class="cta-bubble">
-        Contact us on Facebook to place your order!
-        <a
-          href="https://www.facebook.com/profile.php?id=61569069385836"
-          alt="Facebook link"
-        >
-          <img id="social-icon" src="images/facebook.png" alt="Facebook icon"
-        /></a>
+        Limited Availability! 🎂 Get Your Sweet Treats Before They’re Gone!
+        <button class="enquiry-btn">Order Now</button>
       </div>
     </div>
     <footer>
       <div class="footer">
-        <span>
-          Follow us on
-          <a
-            href="https://www.facebook.com/profile.php?id=61569069385836"
-            alt="facebook link"
-            >Facebook</a
-          >
-          for orders and updates!
-        </span>
-        <span>Email: sample@gmail.com</span>
-        <span>Location: Airdrie, Scotland, UK</span>
-      </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <p>
+            Stay updated with our latest treats! Follow us on 
+            <a href="https://www.facebook.com/profile.php?id=61569069385836" target="_blank">Facebook</a>
+          </p>
+        </div>
+    
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:dlinden22@live.co.uk">dlinden22@live.co.uk</a></p>
+          <p>Location: Airdrie, Scotland, UK</p>
+        </div>
+  
+    
+      
     </footer>
   </body>
 </html>

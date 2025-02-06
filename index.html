@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>A Piece of Cake</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +16,7 @@
   </head>
   <body>
     <div class="nav-bar-container">
-      <div class="nav-logo">A Piece of Cake</div>
+      <div class="nav-logo"><a href="index.html">A Piece of Cake</a></div>
       <div class="menu-toggle" id="menu-toggle">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -27,11 +26,10 @@
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="products-prices.html">Products and Prices</a></li>
-          
         </ul>
       </div>
     </div>
-  </div>
+
     <div class="main-banner">
       <img src="images/piece-of-cake-logo.jpg" alt="piece of cake logo" />
     </div>
@@ -56,20 +54,20 @@
     <div id="enquiryModal" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
-        <h2>Send an Enquiry</h2>
+        <h2>Place an Order</h2>
         <form
           id="contact-form"
-          action="https://formspree.io/f/xanqbykz"
+          action="https://formspree.io/f/myzkpeqr"
           method="POST"
         >
-          <label for="name">Full Name:</label><br>
-          <input type="text" id="name" name="Name" required /><br>
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="Name" required /><br />
 
-          <label for="email">Email Address:</label><br>
-          <input type="email" id="email" name="Email Address" required /><br>
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="Email Address" required /><br />
 
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="Message" required></textarea><br>
+          <label for="message">Order:</label><br />
+          <textarea id="message" name="Message" required></textarea><br />
 
           <button type="submit" class="submit">Send Message</button>
         </form>
@@ -80,76 +78,85 @@
     </div>
 
     <div class="products-section">
-      <div class="products-title"><h1 class="hero2">Best Sellers!</h1></div>
+      <div class="products-title"><h1 class="hero2">Our Products!</h1></div>
       <div class="products">
         <div class="card" onclick="openModal('caramelCake')">
           <div class="product-text">
             <h2>Classic Caramel Cake</h2>
-            <p>
-              
-            </p>
           </div>
-          <img src="images/caramelcake.jpg" />
+          <img src="images/caramelcake.jpg" alt="caramel shortcake image" />
         </div>
         <div class="card" onclick="openModal('cupcakes')">
           <div class="product-text">
             <h2>Cupcakes</h2>
-            <p>
-              
-            </p>
           </div>
-          <img src="images/cupcakes-img.png" />
+          <img src="images/cupcakes-img.png" alt="cupcakes image" />
         </div>
         <div class="card" onclick="openModal('brownies')">
           <div class="product-text">
             <h2>Decadent Brownies</h2>
-            <p>
-             
-            </p>
           </div>
-          <img src="images/brownies.jpg" />
+          <img src="images/brownies.jpg" alt="brownies image" />
         </div>
 
         <div class="card" onclick="openModal('cheesecake')">
           <div class="product-text">
             <h2>Cheesecake</h2>
-            <p>
-              
-            </p>
           </div>
-          <img src="images/cheesecake.jpg" />
+          <img src="images/cheesecake.jpg" alt="cheesecake image" />
         </div>
         <div class="card" onclick="openModal('ruffles')">
           <div class="product-text">
             <h2>Ruffles</h2>
-            <p>
-              
-            </p>
           </div>
-          <img src="images/ruffles.jpg"/>
+          <img src="images/ruffles.jpg" />
         </div>
         <div class="card" onclick="openModal('marsBarCake')">
           <div class="product-text">
             <h2>Mars Bar Cake</h2>
-            <p>
-              
-            </p>
           </div>
-          <img src="images/mars-bar-cake.jpg" />
+          <img src="images/mars-bar-cake.jpg" alt="mars bar cake image" />
+        </div>
+        <div class="card" onclick="openModal('oldSchool')">
+          <div class="product-text">
+            <h2>Old School Sponge Cake</h2>
+          </div>
+          <img
+            src="images/Old School Sponge.png"
+            alt="old school sponge cake image"
+          />
+        </div>
+
+        <div class="card" onclick="openModal('stickyTof')">
+          <div class="product-text">
+            <h2>Sticky Toffee Pudding</h2>
+          </div>
+          <img
+            src="images/sticky toffee.png"
+            alt="sticky toffee pudding image"
+          />
         </div>
       </div>
     </div>
 
     <div id="caramelCake" class="modal">
       <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('caramelCake')">&times;</span>
+        <span class="close-btn" onclick="closeModal('caramelCake')"
+          >&times;</span
+        >
         <h2>Old School Caramel Cake</h2>
-        <p>Sweet, moist, and covered in a rich layer of golden caramel, this
-          classic cake is the ultimate comfort dessert. Packaged with care,
-          it’s perfect for sharing—or savoring all on your own.</p>
-          <strong><p>Single portion: £3<br>Traybake: £26</p></strong>
-        <button class="enquiry-btn">Order Now</button><br>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+        <p>
+          Sweet, moist, and covered in a rich layer of golden caramel, this
+          classic cake is the ultimate comfort dessert. Packaged with care, it’s
+          perfect for sharing—or savoring all on your own.
+        </p>
+        <strong
+          ><p>Single portion: £3<br />Traybake: £15</p></strong
+        >
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
@@ -157,13 +164,19 @@
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('cupcakes')">&times;</span>
         <h2>Cupcakes</h2>
-        <p>Our handcrafted cupcakes are perfect for any occasion, featuring
+        <p>
+          Our handcrafted cupcakes are perfect for any occasion, featuring
           customizable designs, flavors, and decorations. Whether simple or
-          elaborate, each cupcake is beautifully crafted to match your
-          theme, adding a delicious and elegant touch to any celebration.</p>
-          <strong><p>Box of 6: £12<br>Box of 12: £20<br></p></strong>
-        <button class="enquiry-btn">Order Now</button><br>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+          elaborate, each cupcake is beautifully crafted to match your theme,
+          adding a delicious and elegant touch to any celebration.
+        </p>
+        <strong
+          ><p>Box of 6: £12<br />Box of 12: £20<br /></p
+        ></strong>
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
@@ -171,26 +184,41 @@
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('brownies')">&times;</span>
         <h2>Brownies</h2>
-        <p> Indulge in the rich, fudgy goodness of our homemade brownies!
-          Perfect for chocoholics looking for the ultimate treat.</p> <p>Any
-          flavour made upon request.</p>
-          <strong><p>Single portion: £3</p></strong>
-        <button class="enquiry-btn">Order Now</button><br>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+        <p>
+          Indulge in the rich, fudgy goodness of our homemade brownies! Perfect
+          for chocoholics looking for the ultimate treat.
+        </p>
+        <p>Any flavour made upon request.</p>
+        <strong><p>Single portion: £3</p></strong>
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
     <div id="cheesecake" class="modal">
       <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('cheesecake')">&times;</span>
+        <span class="close-btn" onclick="closeModal('cheesecake')"
+          >&times;</span
+        >
         <h2>Cheesecake</h2>
-        <p>Made with a rich, velvety filling on a buttery biscuit base, each
-          bite is pure indulgence. Custom flavors are available upon
-          request. Whether you prefer a classic favorite or something
-          unique, we’ve got you covered.</p> <strong><p>Single portion: £4<br>Small traybake: £17<br>Large traybake: £20</p></strong>
+        <p>
+          Made with a rich, velvety filling on a buttery biscuit base, each bite
+          is pure indulgence. Custom flavors are available upon request. Whether
+          you prefer a classic favorite or something unique, we’ve got you
+          covered.
+        </p>
+        <strong
+          ><p>
+            Single portion: £4<br />Small traybake: £17<br />Large traybake: £20
+          </p></strong
+        >
 
-        <button class="enquiry-btn">Order Now</button><br>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
@@ -198,33 +226,81 @@
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('ruffles')">&times;</span>
         <h2>Raspberry Ruffles</h2>
-        <p>Bring a taste of nostalgia to your day with our old-school
-          ruffles! These colorful, chocolate-covered treats are wrapped for
-          freshness and perfect for gifting or satisfying your own sweet
-          cravings. </p><p>Available in both milk and white chocolate.</p><strong><p>Single portion: £2.50</p></strong>
-        <button class="enquiry-btn">Order Now</button><br>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+        <p>
+          Bring a taste of nostalgia to your day with our old-school ruffles!
+          These colorful, chocolate-covered treats are wrapped for freshness and
+          perfect for gifting or satisfying your own sweet cravings.
+        </p>
+        <p>Available in both milk and white chocolate.</p>
+        <strong><p>Single portion: £2.50</p></strong>
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
     <div id="marsBarCake" class="modal">
       <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('marsBarCake')">&times;</span>
+        <span class="close-btn" onclick="closeModal('marsBarCake')"
+          >&times;</span
+        >
         <h2>Mars Bar Cake</h2>
-        <p>Our Mars Bar cake is a rich, indulgent treat made with melted Mars
-          Bars, crispy rice cereal, and a smooth chocolate topping. Perfect
-          for any occasion.</p><strong><p>Single portion: £3<br>Traybake: £15</p></strong>
-        <button class="enquiry-btn">Order Now</button><br>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+        <p>
+          Our Mars Bar cake is a rich, indulgent treat made with melted Mars
+          Bars, crispy rice cereal, and a smooth chocolate topping. Perfect for
+          any occasion.
+        </p>
+        <strong
+          ><p>Single portion: £3<br />Traybake: £15</p></strong
+        >
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
+    <div id="stickyTof" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('stickyTof')">&times;</span>
+        <h2>Sticky Toffee Pudding</h2>
+        <p>
+          Rich, moist, and packed with deep caramel flavor, our Sticky Toffee
+          Pudding is the ultimate indulgence. A classic treat best enjoyed warm
+          with a drizzle of toffee sauce!
+        </p>
+        <strong><p>Single portion: £4.50</p></strong>
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
+      </div>
+    </div>
+
+    <div id="oldSchool" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('oldSchool')">&times;</span>
+        <h2>Old School Sponge Cake</h2>
+        <p>
+          Soft vanilla sponge topped with sweet icing and colorful sprinkles – a
+          nostalgic classic that tastes just like childhood!
+        </p>
+        <strong><p>Traybake: £15</p></strong>
+        <button class="enquiry-btn">Order Now</button><br />
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
+      </div>
+    </div>
 
     <div class="cta-banner">
       <div class="cta-bubble">
         Limited Availability! 🎂 Get Your Sweet Treats Before They’re Gone!
         <button class="enquiry-btn">Order Now</button>
-        <a href="products-prices.html"><button class="pricing-btn">See Full Pricing</button></a>
+        <a href="products-prices.html"
+          ><button class="pricing-btn">See Full Pricing</button></a
+        >
       </div>
     </div>
 
@@ -233,20 +309,24 @@
         <div class="footer-section">
           <h3>Follow Us</h3>
           <p>
-            Stay updated with our latest treats! Follow us on 
-            <a href="https://www.facebook.com/profile.php?id=61569069385836" target="_blank">Facebook</a>
+            Stay updated with our latest treats! Follow us on
+            <a
+              href="https://www.facebook.com/profile.php?id=61569069385836"
+              target="_blank"
+              >Facebook</a
+            >
           </p>
         </div>
-    
+
         <div class="footer-section">
           <h3>Contact</h3>
-          <p>Email: <a href="mailto:dlinden22@live.co.uk">dlinden22@live.co.uk</a></p>
+          <p>
+            Email:
+            <a href="mailto:dlinden22@live.co.uk">dlinden22@live.co.uk</a>
+          </p>
           <p>Location: Airdrie, Scotland, UK</p>
         </div>
-  
-    
-      
+      </div>
     </footer>
-    
   </body>
 </html>
